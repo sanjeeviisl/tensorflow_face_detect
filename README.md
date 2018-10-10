@@ -17,6 +17,8 @@ Intstallation :
 	downloads/dlib-19.4$ python setup.py install
 
 Commands:	
+python scripts/download_and_extract_model.py \
+--model-dir model
 
 python scripts/preprocess.py \
 --input-dir data \
@@ -26,7 +28,7 @@ python scripts/preprocess.py \
 
 python scripts/train_classifier.py \
 --input-dir output/intermediate \
---model-path  model/20170511-185253.pb \
+--model-path  model/20170511-185253/20170511-185253.pb \
 --classifier-path output/classifier.pkl \
 --num-threads 16 \
 --num-epochs 25 \
